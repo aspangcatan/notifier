@@ -1,0 +1,16 @@
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.*
+!.env.example
+
+/public/assets/notifier-5e4e8-firebase-adminsdk-ihhu7-65600f7d74.json
+/config/notifier.json
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
