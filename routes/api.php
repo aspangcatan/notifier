@@ -15,11 +15,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-// Called server-to-server by cvchd7.com (see App\Http\Middleware\VerifyPartnerApi)
-Route::middleware('partner.api')->group(function () {
-    Route::post('/insert_referral', [\App\Http\Controllers\ReferralController::class, 'insert_referral']);
-    Route::post('/insert_referral_5pm', [\App\Http\Controllers\ReferralController::class, 'insert_referral_5pm']);
-});
+// Disabled: referrals are now created manually through the web app (/manual_referral).
+// These were previously called server-to-server by cvchd7.com.
+// Route::post('/insert_referral', [\App\Http\Controllers\ReferralController::class, 'insert_referral']);
+// Route::post('/insert_referral_5pm', [\App\Http\Controllers\ReferralController::class, 'insert_referral_5pm']);
 
 // Route::post('/login', [\App\Http\Controllers\ReferralController::class, 'login']);
 // Route::post('/forward_referral', [\App\Http\Controllers\ReferralController::class, 'forward_referral']);
