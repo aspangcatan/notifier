@@ -30,4 +30,10 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    // Server-to-server callers of the referral insert API (e.g. cvchd7.com).
+    'partner_api' => [
+        'key' => env('PARTNER_API_KEY'),
+        'allowed_ips' => env('PARTNER_ALLOWED_IPS'),
+    ],
+
 ];
